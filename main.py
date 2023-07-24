@@ -51,13 +51,14 @@ if data > 5:
 print(data)
 
 # data가 각각 다른 블록에 있으므로, data는 다른 데이터로 가장 큰 블록에서 출력이 불가능하다.
+# 그러나 파이썬은 Block Scope가 따로 존재하지 않기 때문에, if문 안에서 선언했어도 구분없이 사용할 수 있다.
 condition = 20
 if condition > 5:
     data = 20
 else:
     data = 30
     print(data)
-print(data) # 불가
+print(data)
 
 
 print([1, 2, 3] + [4, 5]) # 데이터의 모임의 경우는 결합
